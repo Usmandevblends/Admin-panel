@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -10,4 +9,49 @@
 @font-face {
   font-family: "Poppins", sans-serif;
   src: url(../../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.admin-panel .sidebar {
+  background-color: #1d374e;
+}
+.admin-panel .sidebar .user img {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #fff;
+}
+.admin-panel .sidebar .user h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.admin-panel .side-right .header {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5px 20px;
+}
+.admin-panel .side-right .header .toggle-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+.admin-panel .side-right .header .admin img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.admin-panel .side-right .header .admin h6 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1d374e;
 }/*# sourceMappingURL=style.css.map */
