@@ -1,1 +1,13 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../../../assets/fonts/Poppins/Poppins-Regular.ttf);
+}/*# sourceMappingURL=style.css.map */
