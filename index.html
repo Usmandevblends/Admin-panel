@@ -2,161 +2,204 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/sass/style.css" />
-    <title>Admin Panel</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="public/css/bootstrap.css">
+  <link rel="stylesheet" href="public/css/main.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css' />
 </head>
-<body>
-    <div class="admin-panel">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-2 col-sm-0 g-0">
-                    <div class="sidebar w-100 vh-100">
-                        <div class="logo pt-4 d-flex align-item-center justify-content-left px-1 gap-2">
-                            <h3 class="text-white">
-                                <i class="fa fa-paw px-3" aria-hidden="true"></i>Madani
-                            </h3>
-                        </div>
-                        <div class="user d-flex gap-2 px-3 pt-3">
-                            <img src="./assets/img/user.jpg" class="object-fit-cover rounded-circle" alt="" />
-                            <div class="content">
-                                <span class="text-white">Welcome,</span>
-                                <h6 class="">Super Admin</h6>
-                            </div>
-                        </div>
-                        <h4 class="text-white pt-3 px-4">GENERAL</h4>
-                        <ul class="d-flex align-item-center justify-content-center flex-column gap-4 pt-5 text-white">
-                            <li class="gap-2 d-flex active">
-                                <i class="pt-2 fa fa-home"></i><a href="">Home</a>
-                            </li>
-                            <li class="d-flex gap-2">
-                                <i class="pt-2 fa-solid fa-diagram-project"></i><a href="">Projects</a>
-                            </li>
-                            <li class="gap-2 d-flex align-item-center justify-content-start">
-                                <i class="pt-2 fa-solid fa-user"></i><a href="">Staff</a>
-                            </li>
-                            <li class="gap-2 d-flex">
-                                <i class="pt-2 fa-solid fa-gear"></i><a href="">Equipments</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-10 col-sm-6  g-0">
-                    <div class="side-right">
-                        <div class="header d-flex align-item-center justify-content-between">
-                            <div class="toggle-btn">
-                                <i class="fa fa-bars pt-0" aria-hidden="true"></i>
-                            </div>
-                            <div class="admin d-flex gap-2">
-                                <img src="./assets/img/user.jpg" class="rounded-circle" />
-                                <h6 class="pt-3">Super Admin</h6>
-                            </div>
-                        </div>
-                        <div class="sta d-flex align-item-center justify-content-between mt-2">
-                            <h3 class="pt-3 px-3">Project Staff</h3>
-                            <a
-                                class="primary-btn mt-1 mx-4 d-flex align-item-center justify-content-between h-25">AddNewStaff</a>
-                        </div>
-                        <h4 class="px-3" style="color: #c5cbcf">
-                            List of the Staff With Oditable Substances
-                        </h4>
-                        <div class="container mt-5">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <table class="table table-bordered table-responsive">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Name</th>
-                                                <th>User Name</th>
-                                                <th>Password</th>
-                                                <th>Contact</th>
-                                                <th>Address</th>
-                                                <th>Actions</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- Render the table rows using the data -->
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Rehman Shaikh</td>
-                                                <td>03000</td>
-                                                <td>sukkur</td>
-                                                <td>+92035698746</td>
-                                                <td>Mirpur</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <button type="button" class="btn btn-link edit-btn"
-                                                            onclick="editRow(2)">
-                                                            Edit
-                                                        </button>
-                                                        <button type="button" class="btn btn-link delete-btn"
-                                                            onclick="deleteRow(2)">
-                                                            Delete
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Rehman Shaikh</td>
-                                                <td>03000</td>
-                                                <td>sukkur</td>
-                                                <td>+92035698746</td>
-                                                <td>Mirpur</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <button type="button" class="btn btn-link edit-btn"
-                                                            onclick="editRow(2)">
-                                                            Edit
-                                                        </button>
-                                                        <button type="button" class="btn btn-link delete-btn"
-                                                            onclick="deleteRow(2)">
-                                                            Delete
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Rehman Shaikh</td>
-                                                <td>03000</td>
-                                                <td>sukkur</td>
-                                                <td>+92035698746</td>
-                                                <td>Mirpur</td>
-                                                <td>
-                                                    <div class="d-flex">
-                                                        <button type="button" class="btn btn-link edit-btn"
-                                                            onclick="editRow(2)">
-                                                            Edit
-                                                        </button>
-                                                        <button type="button" class="btn btn-link delete-btn"
-                                                            onclick="deleteRow(2)">
-                                                            Delete
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <!-- More table rows... -->
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="./assets/Js/script.js"></script>
+<body>
+  <div class="wrapper">
+    <div id="overlay"></div>
+    <!-- sidebar start -->
+    <div class="sidebar shadow">
+      <div class="admin_brand d-flex justify-content-between align-items-baseline">
+        <div>
+          <a class="nav-link fw-bold" href="#">
+            <span class="icon"><i class="fas fa-code"></i></span>
+            <span class="menu">Admin Panel</span>
+          </a>
+        </div>
+        <div class="d-block d-md-none">
+          <a href="javascript:void(0)" id="close_sidebar"><i class="fas fa-times-circle fa-lg"></i></a>
+        </div>
+      </div>
+
+      <ul class="nav nav-pills flex-column">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <span class="icon" data-bs-toggle="tooltip" data-bs-title="Dashboard"><i
+                class="fas fa-dashboard"></i></span>
+            <span class="menu">Dashboard</span>
+          </a>
+        </li>
+
+        <!-- drodown menu start -->
+        <li class="nav-item position-relative" data-bs-toggle="collapse" href="#masterCollapse" role="button"
+          aria-expanded="false" aria-controls="masterCollapse">
+          <a class="nav-link" href="#">
+            <span class="icon" data-bs-toggle="tooltip" data-bs-title="Master">
+              <i class="fas fa-cubes"></i>
+            </span>
+            <span class="menu">Master</span>
+          </a>
+        </li>
+        <div class="collapse" id="masterCollapse">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="icon" data-bs-toggle="tooltip" data-bs-title="Child One">
+                <i class="fas fa-cube"></i>
+              </span>
+              <span class="menu">Child One</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="icon" data-bs-toggle="tooltip" data-bs-title="Child Two">
+                <i class="fas fa-cube"></i>
+              </span>
+              <span class="menu">Child Two</span>
+            </a>
+          </li>
+        </div>
+        <!-- dropdown menu end -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon" data-bs-toggle="tooltip" data-bs-title="Users"><i class="fas fa-users"></i></span>
+            <span class="menu">Users</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- sidebar end -->
+    <div class="content">
+      <!-- top navbar start -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light shadow d-flex flex-column">
+        <div class="container-fluid px-3">
+
+          <button class="navbar-toggler border-0" type="button" id="show_sidebar_phone">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand d-none d-md-block" href="javascript:void(0)" id="show_sidebar_pc">
+            <i class="fas fa-bars fa-lg"></i>
+          </a>
+          <div class="fw-bold text-secondary d-md-none d-block">Admin Panel</div>
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle py-1 px-3 rounded-1" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fas fa-user-circle me-1"></i>Sahil
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-card me-2"></i>Profile</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Account</a></li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </nav>
+        <div class="side-right">
+          <div class="sta d-flex align-item-center justify-content-between mt-2">
+              <h3 class="pt-3 px-3">Project Staff</h3>
+              <a
+                  class="primary-btn mt-1 mx-4 d-flex align-item-center justify-content-between h-25">AddNewStaff</a>
+          </div>
+          <h4 class="px-3" style="color: #c5cbcf">
+              List of the Staff With Oditable Substances
+          </h4>
+          <div class="container mt-5">
+              <div class="row">
+                  <div class="col-md-8">
+                      <table class="table table-bordered table-responsive">
+                          <thead>
+                              <tr>
+                                  <th>#</th>
+                                  <th>Name</th>
+                                  <th>User Name</th>
+                                  <th>Password</th>
+                                  <th>Contact</th>
+                                  <th>Address</th>
+                                  <th>Actions</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <!-- Render the table rows using the data -->
+                              <tr>
+                                  <td>1</td>
+                                  <td>Rehman Shaikh</td>
+                                  <td>03000</td>
+                                  <td>sukkur</td>
+                                  <td>+92035698746</td>
+                                  <td>Mirpur</td>
+                                  <td>
+                                      <div class="d-flex">
+                                          <button type="button" class="btn btn-link edit-btn"
+                                              onclick="editRow(2)">
+                                              Edit
+                                          </button>
+                                          <button type="button" class="btn btn-link delete-btn"
+                                              onclick="deleteRow(2)">
+                                              Delete
+                                          </button>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>1</td>
+                                  <td>Rehman Shaikh</td>
+                                  <td>03000</td>
+                                  <td>sukkur</td>
+                                  <td>+92035698746</td>
+                                  <td>Mirpur</td>
+                                  <td>
+                                      <div class="d-flex">
+                                          <button type="button" class="btn btn-link edit-btn"
+                                              onclick="editRow(2)">
+                                              Edit
+                                          </button>
+                                          <button type="button" class="btn btn-link delete-btn"
+                                              onclick="deleteRow(2)">
+                                              Delete
+                                          </button>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td>1</td>
+                                  <td>Rehman Shaikh</td>
+                                  <td>03000</td>
+                                  <td>sukkur</td>
+                                  <td>+92035698746</td>
+                                  <td>Mirpur</td>
+                                  <td>
+                                      <div class="d-flex">
+                                          <button type="button" class="btn btn-link edit-btn"
+                                              onclick="editRow(2)">
+                                              Edit
+                                          </button>
+                                          <button type="button" class="btn btn-link delete-btn"
+                                              onclick="deleteRow(2)">
+                                              Delete
+                                          </button>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <!-- More table rows... -->
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/js/bootstrap.bundle.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="public/js/main.js"></script>
 </body>
 
 </html>
