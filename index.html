@@ -14,7 +14,7 @@
     <div class="admin-panel">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-2 g-0">
+                <div class="col-lg-2 col-sm-0 g-0">
                     <div class="sidebar w-100 vh-100">
                         <div class="logo pt-4 d-flex align-item-center justify-content-left px-1 gap-2">
                             <h3 class="text-white">
@@ -29,15 +29,23 @@
                             </div>
                         </div>
                         <h4 class="text-white pt-3 px-4">GENERAL</h4>
-                        <ul class="d-flex align-item-center justify-content-center flex-column  gap-4 pt-5 text-white">
-                            <li class="gap-2 d-flex"><i class="pt-2 fa fa-home"></i><a href="">Home</a></li>
-                            <li class="d-flex gap-2"><i class="pt-2  fa-solid fa-diagram-project"></i><a href="">Projects</a></li>
-                            <li class="gap-2 d-flex align-item-center justify-content-start"><i class="pt-2  fa-solid fa-user"></i><a href="">Staff</a></li>
-                            <li class="gap-2 d-flex"> <i class="pt-2 fa-solid fa-gear"></i><a href="">Equipments</a></li>
+                        <ul class="d-flex align-item-center justify-content-center flex-column gap-4 pt-5 text-white">
+                            <li class="gap-2 d-flex active">
+                                <i class="pt-2 fa fa-home"></i><a href="">Home</a>
+                            </li>
+                            <li class="d-flex gap-2">
+                                <i class="pt-2 fa-solid fa-diagram-project"></i><a href="">Projects</a>
+                            </li>
+                            <li class="gap-2 d-flex align-item-center justify-content-start">
+                                <i class="pt-2 fa-solid fa-user"></i><a href="">Staff</a>
+                            </li>
+                            <li class="gap-2 d-flex">
+                                <i class="pt-2 fa-solid fa-gear"></i><a href="">Equipments</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-10 g-0">
+                <div class="col-lg-10 col-sm-6  g-0">
                     <div class="side-right">
                         <div class="header d-flex align-item-center justify-content-between">
                             <div class="toggle-btn">
@@ -46,6 +54,97 @@
                             <div class="admin d-flex gap-2">
                                 <img src="./assets/img/user.jpg" class="rounded-circle" />
                                 <h6 class="pt-3">Super Admin</h6>
+                            </div>
+                        </div>
+                        <div class="sta d-flex align-item-center justify-content-between mt-2">
+                            <h3 class="pt-3 px-3">Project Staff</h3>
+                            <a
+                                class="primary-btn mt-1 mx-4 d-flex align-item-center justify-content-between h-25">AddNewStaff</a>
+                        </div>
+                        <h4 class="px-3" style="color: #c5cbcf">
+                            List of the Staff With Oditable Substances
+                        </h4>
+                        <div class="container mt-5">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <table class="table table-bordered table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Name</th>
+                                                <th>User Name</th>
+                                                <th>Password</th>
+                                                <th>Contact</th>
+                                                <th>Address</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Render the table rows using the data -->
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Rehman Shaikh</td>
+                                                <td>03000</td>
+                                                <td>sukkur</td>
+                                                <td>+92035698746</td>
+                                                <td>Mirpur</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <button type="button" class="btn btn-link edit-btn"
+                                                            onclick="editRow(2)">
+                                                            Edit
+                                                        </button>
+                                                        <button type="button" class="btn btn-link delete-btn"
+                                                            onclick="deleteRow(2)">
+                                                            Delete
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Rehman Shaikh</td>
+                                                <td>03000</td>
+                                                <td>sukkur</td>
+                                                <td>+92035698746</td>
+                                                <td>Mirpur</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <button type="button" class="btn btn-link edit-btn"
+                                                            onclick="editRow(2)">
+                                                            Edit
+                                                        </button>
+                                                        <button type="button" class="btn btn-link delete-btn"
+                                                            onclick="deleteRow(2)">
+                                                            Delete
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Rehman Shaikh</td>
+                                                <td>03000</td>
+                                                <td>sukkur</td>
+                                                <td>+92035698746</td>
+                                                <td>Mirpur</td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <button type="button" class="btn btn-link edit-btn"
+                                                            onclick="editRow(2)">
+                                                            Edit
+                                                        </button>
+                                                        <button type="button" class="btn btn-link delete-btn"
+                                                            onclick="deleteRow(2)">
+                                                            Delete
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <!-- More table rows... -->
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
