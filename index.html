@@ -27,17 +27,14 @@
           <a href="javascript:void(0)" id="close_sidebar"><i class="fas fa-times-circle fa-lg"></i></a>
         </div>
       </div>
-
-      <ul class="nav nav-pills flex-column">
-
+      <ul class="nav nav-pills flex-column mt-3">
         <li class="nav-item active">
           <a class="nav-link" href="#">
             <span class="icon" data-bs-toggle="tooltip" data-bs-title="Dashboard"><i
                 class="fas fa-dashboard"></i></span>
-            <span class="menu">Dashboard</span>
+            <span class="menu">Home</span>
           </a>
         </li>
-
         <!-- drodown menu start -->
         <li class="nav-item position-relative" data-bs-toggle="collapse" href="#masterCollapse" role="button"
           aria-expanded="false" aria-controls="masterCollapse">
@@ -45,7 +42,7 @@
             <span class="icon" data-bs-toggle="tooltip" data-bs-title="Master">
               <i class="fas fa-cubes"></i>
             </span>
-            <span class="menu">Master</span>
+            <span class="menu">Projects</span>
           </a>
         </li>
         <div class="collapse" id="masterCollapse">
@@ -57,7 +54,6 @@
               <span class="menu">Child One</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span class="icon" data-bs-toggle="tooltip" data-bs-title="Child Two">
@@ -71,7 +67,13 @@
         <li class="nav-item">
           <a class="nav-link" href="#">
             <span class="icon" data-bs-toggle="tooltip" data-bs-title="Users"><i class="fas fa-users"></i></span>
-            <span class="menu">Users</span>
+            <span class="menu">Staff</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="icon" data-bs-toggle="tooltip" data-bs-title="Users"><i class="fa-solid fa-gear"></i></span>
+            <span class="menu">Equipments</span>
           </a>
         </li>
       </ul>
@@ -105,16 +107,15 @@
         <div class="side-right">
           <div class="sta d-flex align-item-center justify-content-between mt-2">
               <h3 class="pt-3 px-3">Project Staff</h3>
-              <a
-                  class="primary-btn mt-1 mx-4 d-flex align-item-center justify-content-between h-25">AddNewStaff</a>
+              <button type="button" class="btn btn-success mx-5 mt-1 ">AddNewStaff</button>
           </div>
           <h4 class="px-3" style="color: #c5cbcf">
               List of the Staff With Oditable Substances
           </h4>
-          <div class="container mt-5">
+          <div class="container mt-5 overflow-hidden w-100">
               <div class="row">
-                  <div class="col-md-8">
-                      <table class="table table-bordered table-responsive">
+                  <div class="col-md-8 col-sm-12 ">
+                      <table class="table table-bordered table-responsive overflow-hidden">
                           <thead>
                               <tr>
                                   <th>#</th>
