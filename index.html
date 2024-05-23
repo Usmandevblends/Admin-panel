@@ -22,7 +22,7 @@
           </a>
         </div>
         <div class="d-block d-md-none">
-          <a href="javascript:void(0)" id="close_sidebar"><i class="fas fa-times-circle fa-lg"></i></a>
+          <a href="#" id="close_sidebar"><i class="fas fa-times-circle fa-lg"></i></a>
         </div>
       </div>
       <ul class="nav nav-pills flex-column mt-3">
@@ -80,11 +80,10 @@
     <div class="content">
       <nav class="navbar navbar-expand-md navbar-light bg-light shadow d-flex flex-column">
         <div class="container-fluid px-3">
-
           <button class="navbar-toggler border-0" type="button" id="show_sidebar_phone">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand d-none d-md-block" href="javascript:void(0)" id="show_sidebar_pc">
+          <a class="navbar-brand d-none d-md-block" href="#" id="show_sidebar_pc">
             <i class="fas fa-bars fa-lg"></i>
           </a>
           <div class="fw-bold text-secondary d-md-none d-block">Admin Panel</div>
@@ -104,91 +103,89 @@
         <div class="side-right">
           <div class="sta d-flex align-item-center justify-content-between mt-2">
               <h3 class="pt-3 px-3">Project Staff</h3>
-              <button type="button" class="btn btn-success mx-5 mt-1 ">AddNewStaff</button>
+              <button type="button" class="btn1 btn-success mx-5 mt-3 border-0  text-white fw-semibold lh-lg">AddNewStaff</button>
           </div>
-          <h4 class="px-3" style="color: #c5cbcf">
+          <h6 class="px-3" style="color: #c5cbcf">
               List of the Staff With Oditable Substances
-          </h4>
-          <div class="container mt-5 overflow-hidden w-100">
+          </h6>
+          <div class="container mt-5 w-100">
               <div class="row">
-                  <div class="col-md-8 col-sm-12 ">
-                      <table class="table table-bordered table-responsive overflow-hidden">
-                          <thead>
-                              <tr>
-                                  <th>#</th>
-                                  <th>Name</th>
-                                  <th>User Name</th>
-                                  <th>Password</th>
-                                  <th>Contact</th>
-                                  <th>Address</th>
-                                  <th>Actions</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <!-- Render the table rows using the data -->
-                              <tr>
-                                  <td>1</td>
-                                  <td>Rehman Shaikh</td>
-                                  <td>03000</td>
-                                  <td>sukkur</td>
-                                  <td>+92035698746</td>
-                                  <td>Mirpur</td>
-                                  <td>
-                                      <div class="d-flex">
-                                          <button type="button" class="btn btn-link edit-btn"
-                                              onclick="editRow(2)">
-                                              Edit
-                                          </button>
-                                          <button type="button" class="btn btn-link delete-btn"
-                                              onclick="deleteRow(2)">
-                                              Delete
-                                          </button>
-                                      </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>1</td>
-                                  <td>Rehman Shaikh</td>
-                                  <td>03000</td>
-                                  <td>sukkur</td>
-                                  <td>+92035698746</td>
-                                  <td>Mirpur</td>
-                                  <td>
-                                      <div class="d-flex">
-                                          <button type="button" class="btn btn-link edit-btn"
-                                              onclick="editRow(2)">
-                                              Edit
-                                          </button>
-                                          <button type="button" class="btn btn-link delete-btn"
-                                              onclick="deleteRow(2)">
-                                              Delete
-                                          </button>
-                                      </div>
-                                  </td>
-                              </tr>
-                              <tr>
-                                  <td>1</td>
-                                  <td>Rehman Shaikh</td>
-                                  <td>03000</td>
-                                  <td>sukkur</td>
-                                  <td>+92035698746</td>
-                                  <td>Mirpur</td>
-                                  <td>
-                                      <div class="d-flex">
-                                          <button type="button" class="btn btn-link edit-btn"
-                                              onclick="editRow(2)">
-                                              Edit
-                                          </button>
-                                          <button type="button" class="btn btn-link delete-btn"
-                                              onclick="deleteRow(2)">
-                                              Delete
-                                          </button>
-                                      </div>
-                                  </td>
-                              </tr>
-                              <!-- More table rows... -->
-                          </tbody>
-                      </table>
+                  <div class="col-md-12 col-md-6">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Name</th>
+                          <th scope="col">User Name</th>
+                          <th scope="col">Password</th>
+                          <th scope="col">Contact</th>
+                          <th scope="col">Addrees</th>
+                          <th scope="col">Edits</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>*******</td>
+                          <td>+11023654789</td>
+                          <td>New York</td>
+                          <td>
+                            <button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Frank</td>
+                          <td>@Frank</td>
+                          <td>*******</td>
+                          <td>+11023654789</td>
+                          <td>New York</td>
+                          <td>
+                            <button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Mark Wood</td>
+                          <td>@MarkWood</td>
+                          <td>*******</td>
+                          <td>+11023654789</td>
+                          <td>England</td>
+                          <td>
+                            <button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mitchell Starc</td>
+                          <td>@MitchellStarc</td>
+                          <td>*******</td>
+                          <td>+11023654789</td>
+                          <td>Australia</td>
+                          <td>
+                            <button type="button" class="btn btn-primary">Edit</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Trent Boult</td>
+                          <td>@Trent</td>
+                          <td>*******</td>
+                          <td>+11023654789</td>
+                          <td>Newzealand</td>
+                          <td>
+                         <button type="button" class="btn btn-primary">Edit</button>
+                         <button type="button" class="btn btn-danger">Delete</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
               </div>
           </div>

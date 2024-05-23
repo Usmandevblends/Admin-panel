@@ -4,7 +4,15 @@ html {
 }
 body {
     font-family: "Source Sans Pro", sans-serif;
+    user-select: none;
 }
+
+.btn1 {
+    background-color: #20C19B;
+    width: 120px;
+    height: 40px;
+}
+
 .bg-accent {
     background-color: #ff5722;
     color: #f1f1f1;
@@ -72,7 +80,7 @@ body {
 .custom-card:hover i {
     transform: rotate3d(0, 0, 1, -10deg) scale(1.8);
 }
-canvas {
+/* canvas {
     width: 100% !important;
 }
 [data-bs-toggle="collapse"]:after {
@@ -88,10 +96,10 @@ canvas {
     -moz-osx-font-smoothing: grayscale;
     content: "";
     transition: all linear 0.25s;
-}
-[data-bs-toggle="collapse"].collapsed:after {
+} */
+/* [data-bs-toggle="collapse"].collapsed:after {
     transform: rotate(-90deg);
-}
+} */
 @media (min-width: 768px) {
     .wrapper.show_pc .sidebar {
         width: 55px;
@@ -115,6 +123,11 @@ canvas {
     }
 }
 @media (max-width: 768px) {
+    .btn {
+        width: 120px;
+        height: 40px;
+        margin-top: 10px !important;
+    }
     .wrapper #overlay {
         display: none;
         position: absolute;

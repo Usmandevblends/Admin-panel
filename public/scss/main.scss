@@ -6,7 +6,6 @@ html {
 }
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	overflow-y: hidden;
 	user-select: none;
 }
 
@@ -27,7 +26,7 @@ body {
 		width: 100%;
 	}
 	.sidebar {
-		width: 250px;
+		width: 50px;
 		transition: width 0.3s ease;
 		white-space: nowrap;
 		overflow-x: hidden;
@@ -69,29 +68,6 @@ body {
 			}
 		}
 	}
-}
-
-
-canvas {
-	width: 100% !important;
-}
-
-[data-bs-toggle='collapse']:after {
-	display: inline-block;
-	position: absolute;
-	right: 15px;
-	color: $textColor;
-	top: 17px;
-	font: normal normal normal 14px/1 FontAwesome;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	content: '\f104';
-	transition: all linear 0.25s;
-}
-[data-bs-toggle='collapse'].collapsed:after {
-	transform: rotate(-90deg);
 }
 
 @media (min-width: 768px) {
